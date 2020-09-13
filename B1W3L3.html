@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <script>
+
+             let tafel = 6, num2 = 1;
+             for(let i = 0; i < (tafel * 10); i = i + tafel) {
+             document.write('<br>' + num2 + ' x ' + tafel + ' = ' + (i + tafel));
+             num2++
+             };
+
+            var getal1 = prompt("vul een getal in")      
+        if(getal1 && getal1.match(/^\d+$/)){ 
+
+            var getal2 = 6 ;
+            var uitkomst = parseInt(getal1) + getal2;
+            var getal3 = 10;
+            var uitkomst2 = parseInt(uitkomst * getal3);
+            var getal4 = 5;
+            var uitkomst3 = parseInt(uitkomst2 / getal4);
+            var getal5 = 12;
+            var uitkomst4 = parseInt(uitkomst3 - getal5);
+
+            document.write(`<br><br>${getal1} + 6 = ${uitkomst},<br>${uitkomst} * 10 = ${uitkomst2},`+
+            `<br>${uitkomst2} / 5 = ${uitkomst3},<br>${uitkomst3} - 12 = ${uitkomst4}`);
+
+
+        } else {
+                alert("invalid number, please refresh the page to try again!"); 
+             };  
+
+        </script>
+    </body>
+</html> 
